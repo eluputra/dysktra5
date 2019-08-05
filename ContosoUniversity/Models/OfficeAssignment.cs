@@ -8,7 +8,7 @@ namespace ContosoUniversity.Models
     {
         [Key] // one to zero or one realitionship between the instructior and office assignment this mean that office assignment only exist in relation to the instructor its assigned to 
         public int InstructorID { get; set; }
-        [StringLength(50)]
+        [StringLength(50) // limiting to string length 50 
         [Display(Name = "Office Location")]
         public string Location { get; set; }
 
